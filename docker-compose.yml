@@ -1,0 +1,24 @@
+version: "3.3"
+services:
+  db:
+    platform: linux/amd64
+    image: mysql:5.7
+    ports:
+      - "3306:3306"  
+    volumes:
+      - api-data:/var/lib/mysql  
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: api
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test  
+  api:
+    build: ./api
+    depends_on: 
+      - db
+    env_file: ./api/.env
+    restart: on-failure    
+    ports:
+      - "8080:8080"
+volumes:
+  api-data:
