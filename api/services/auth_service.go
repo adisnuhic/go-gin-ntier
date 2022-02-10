@@ -3,8 +3,8 @@ package services
 import (
 	"time"
 
-	"github.com/adisnuhic/hearken/ecode"
-	apperror "github.com/adisnuhic/hearken/pkg"
+	"github.com/adisnuhic/go-gin-ntier/ecode"
+	apperror "github.com/adisnuhic/go-gin-ntier/pkg"
 	"github.com/dgrijalva/jwt-go"
 	"golang.org/x/crypto/bcrypt"
 )

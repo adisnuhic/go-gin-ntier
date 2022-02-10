@@ -1,4 +1,4 @@
-module github.com/adisnuhic/hearken
+module github.com/adisnuhic/go-gin-ntier
 
 go 1.17
 

@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/adisnuhic/hearken/business"
+	"github.com/adisnuhic/go-gin-ntier/business"
 	"github.com/golobby/container/pkg/container"
 )
 
@@ -18,6 +18,11 @@ func Init(c container.Container) {
 	// Bind account controller
 	c.Singleton(func() IAccountController {
 		return NewAccountController(accountBl)
+	})
+
+	// Bind health controller
+	c.Singleton(func() IHealthController {
+		return NewHealthController()
 	})
 
 }

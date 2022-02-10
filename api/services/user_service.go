@@ -1,9 +1,9 @@
 package services
 
 import (
-	"github.com/adisnuhic/hearken/models"
-	apperror "github.com/adisnuhic/hearken/pkg"
-	"github.com/adisnuhic/hearken/repositories"
+	"github.com/adisnuhic/go-gin-ntier/models"
+	apperror "github.com/adisnuhic/go-gin-ntier/pkg"
+	"github.com/adisnuhic/go-gin-ntier/repositories"
 )
 
 // IUserService interface

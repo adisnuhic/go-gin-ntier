@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"github.com/adisnuhic/hearken/business"
-	"github.com/adisnuhic/hearken/requests"
-	"github.com/adisnuhic/hearken/viewmodels"
+	"github.com/adisnuhic/go-gin-ntier/business"
+	"github.com/adisnuhic/go-gin-ntier/requests"
+	"github.com/adisnuhic/go-gin-ntier/viewmodels"
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,6 +12,7 @@ type IAccountController interface {
 	Register(ctx *gin.Context)
 	Login(ctx *gin.Context)
 	RefreshToken(ctx *gin.Context)
+	TestGetUserFromContext(ctx *gin.Context)
 }
 
 type accountController struct {
@@ -95,4 +96,14 @@ func (ctrl accountController) RefreshToken(ctx *gin.Context) {
 		RefreshToken: refreshToken,
 	})
 
+}
+
+// Test function for getting logged in user from context
+func (ctrl accountController) TestGetUserFromContext(ctx *gin.Context) {
+	usr, _ := ctrl.GetUserFromContext(ctx)
+
+	ctrl.RenderSuccess(ctx, &viewmodels.Response{
+		Success: true,
+		Data:    usr,
+	})
 }

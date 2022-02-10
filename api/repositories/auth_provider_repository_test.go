@@ -7,8 +7,8 @@ import (
 	"time"
 
 	sqlmock "github.com/DATA-DOG/go-sqlmock"
-	"github.com/adisnuhic/hearken/db"
-	"github.com/adisnuhic/hearken/models"
+	"github.com/adisnuhic/go-gin-ntier/db"
+	"github.com/adisnuhic/go-gin-ntier/models"
 
 	"github.com/jinzhu/gorm"
 

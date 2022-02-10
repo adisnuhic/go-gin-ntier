@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/adisnuhic/hearken/config"
+	"github.com/adisnuhic/go-gin-ntier/config"
 	"github.com/jinzhu/gorm"
 
 	// initialize mysql driver

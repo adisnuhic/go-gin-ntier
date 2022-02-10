@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/adisnuhic/hearken/config"
-	"github.com/adisnuhic/hearken/repositories"
+	"github.com/adisnuhic/go-gin-ntier/config"
+	"github.com/adisnuhic/go-gin-ntier/repositories"
 	"github.com/golobby/container/pkg/container"
 )
 

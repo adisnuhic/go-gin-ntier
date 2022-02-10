@@ -1,6 +1,6 @@
 package viewmodels
 
-import "github.com/adisnuhic/hearken/pkg/paging"
+import "github.com/adisnuhic/go-gin-ntier/pkg/paging"
 
 type PaginatedModel struct {
 	Results   interface{}       `json:"results"`

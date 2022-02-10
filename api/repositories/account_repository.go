@@ -1,10 +1,10 @@
 package repositories
 
 import (
-	"github.com/adisnuhic/hearken/db"
-	"github.com/adisnuhic/hearken/ecode"
-	"github.com/adisnuhic/hearken/models"
-	apperror "github.com/adisnuhic/hearken/pkg"
+	"github.com/adisnuhic/go-gin-ntier/db"
+	"github.com/adisnuhic/go-gin-ntier/ecode"
+	"github.com/adisnuhic/go-gin-ntier/models"
+	apperror "github.com/adisnuhic/go-gin-ntier/pkg"
 )
 
 // IAccountRepository interface

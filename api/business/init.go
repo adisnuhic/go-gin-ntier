@@ -1,7 +1,7 @@
 package business
 
 import (
-	"github.com/adisnuhic/hearken/services"
+	"github.com/adisnuhic/go-gin-ntier/services"
 	"github.com/golobby/container/pkg/container"
 )
 

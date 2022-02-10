@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"github.com/adisnuhic/hearken/db"
+	"github.com/adisnuhic/go-gin-ntier/db"
 	"github.com/golobby/container/pkg/container"
 )
 
