@@ -9,9 +9,9 @@ import (
 	"github.com/adisnuhic/go-gin-ntier/models"
 	apperror "github.com/adisnuhic/go-gin-ntier/pkg"
 	"github.com/adisnuhic/go-gin-ntier/viewmodels"
-	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-contrib/requestid"
 	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt"
 )
 
 // BaseController -

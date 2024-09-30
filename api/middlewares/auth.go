@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/adisnuhic/go-gin-ntier/config"
-	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt"
 )
 
 // Authorization middleware
