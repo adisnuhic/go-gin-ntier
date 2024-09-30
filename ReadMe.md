@@ -7,7 +7,7 @@ Arch is consisted of 4 layers:
 - Repositories
 
 
-1. Migrations are implemented with go migrate and they are executed when you run the project.
+1. Migrations are implemented with go migrate and they are executed when you build the project.
 2. GORM is used as a ORM.
 3. Entry point of the app is main.go file where everything starts. Golobby container is used to setup DI container.
 4. Unit tests are implemented for repository and service layer
